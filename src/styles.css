@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e6e6fa, #dcd6f7);
+  color: #272142;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.weather-app {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  background-color: #e6e6fa;
+  border: none;
+  color: #333333;
+  font-size: 18px;
+  padding: 20px;
+  width: 95%;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.search-button {
+  font-size: 18px;
+  background: linear-gradient(135deg, #dcd6f7, #bdb3e6);
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.current-city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+  color: #333333;
+}
+
+.current-details {
+  color: rgba(39, 33, 66, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.current-temperature {
+  font-size: 48px;
+  margin-top: 10px;
+  color: #bdb3e6;
+}
+
+.forecast {
+  margin-top: 30px;
+}
+
+.forecast-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-card {
+  background: linear-gradient(135deg, #e6e6fa, #dcd6f7);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+.forecast-card p {
+  font-size: 14px;
+  color: rgba(39, 33, 66, 0.6);
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: #666666;
+  border-top: 1px solid #dddddd;
+}
